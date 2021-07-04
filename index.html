@@ -15,8 +15,8 @@
     <aside class="aside">
       <img class="aside__avatar" src="./src/images/content/aside__avatar.png" alt="avatar">
 
-      <section class="aside__location">
-        <svg width="39" height="60" viewBox="0 0 39 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="location">
+        <svg class="location__icon" width="39" height="60" viewBox="0 0 39 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M26.4219 13.1284C22.2158 10.2905 16.7812 10.2905 12.5775 13.1284C7.16011 16.7798 5.42585 23.8956 8.54406 29.6785L19.4997 
           50L30.4554 29.6785C33.5736 23.8956 31.8418 16.7798 26.4219 13.1284ZM28.2919 28.4855L19.5022 44.7911L10.71 28.4855C8.20855 23.8432 
           9.59744 18.1351 13.9466 15.2049C15.634 14.0668 17.5656 13.4953 19.4997 13.4953C21.4338 13.4953 23.3654 14.0643 25.0528 15.2024C29.402 
@@ -25,14 +25,14 @@
           23.4997C26 19.9169 23.0854 16.9997 19.5 16.9997ZM19.5 27.3997C17.3498 27.3997 15.6 25.6499 15.6 23.4997C15.6 21.3495 17.3498 19.5997 
           19.5 19.5997C21.6502 19.5997 23.4 21.3495 23.4 23.4997C23.4 25.6499 21.6502 27.3997 19.5 27.3997Z" fill="black"/>
         </svg>
-        <p>Lida, Belarus</p>
+        <p class="location__text">Lida, Belarus</p>
       </section>
 
-      <section class="aside__contacts">
+      <section class="contacts">
         <h3>Contacts:</h3>
-        <ul>
-          <li>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ul class="contacts__list">
+          <li class="item-contacts">
+            <svg class="item-contacts__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M37.3169 9.96085C35.5284 6.89656 33.1025 4.47056 30.0385 2.6823C26.974 0.893948 23.6286 0 19.9997 0C16.3713 
               0 13.0247 0.894222 9.96085 2.6823C6.89656 4.47047 4.47074 6.89656 2.6823 9.96085C0.894131 13.025 0 16.3712 0 19.9991C0 
               24.3571 1.27147 28.276 3.81504 31.7566C6.35833 35.2376 9.64389 37.6462 13.6714 38.9829C14.1403 39.0699 14.4873 39.0087 
@@ -57,10 +57,10 @@
               38.3313 25.0823 38.5919 25.2995 38.8001C25.5165 39.008 25.8592 39.0692 26.328 38.9821C30.3561 37.6456 33.6417 35.2368 
               36.1849 31.7559C38.7278 28.2752 39.9997 24.3564 39.9997 19.9984C39.9988 16.3709 39.1042 13.025 37.3169 9.96085Z" fill="black"/>
             </svg>
-            <a href="">/NikitaKorevo</a>
+            <a class="item-contacts__link" href="">/NikitaKorevo</a>
           </li>
-          <li>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li  class="item-contacts">
+            <svg class="item-contacts__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M35.7088 0H4.29119C1.92123 0 0 1.92123 0 4.29119V35.7088C0 38.0788 1.92123 40 4.29119 40H35.7088C38.0788 
               40 40 38.0788 40 35.7088V4.29119C40 1.92123 38.0788 0 35.7088 0Z" fill="black"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3601 15.3257C26.5134 15.0191 26.8199 15.0191 26.8199 
@@ -82,10 +82,10 @@
               17.6246 27.8927 17.3181 28.046L29.4254 40H35.7089L40.0001 35.7088V21.3027Z" fill="black"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M10.115 19.7701L16.705 26.5134L15.1725 21.6092L10.115 19.7701Z" fill="black"/>
             </svg>
-            <a href="">@korevo</a>
+            <a class="item-contacts__link" href="">@korevo</a>
           </li>
-          <li>
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li  class="item-contacts">
+            <svg class="item-contacts__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 
               20C0 31.0457 8.95431 40 20 40Z" fill="black"/>
               <path d="M31.9499 21.6093V29.8549H27.1694V22.1619C27.1694 20.2303 26.4792 18.9112 24.7483 
@@ -97,40 +97,40 @@
               15.0281 12.4101 15.0281 11.0296C14.9964 9.61924 13.9914 8.54576 12.3557 8.54576ZM9.93454 
               29.8549H14.7137V15.4765H9.93454V29.8549Z" fill="#F1F2F2"/>
             </svg>
-            <a href="">/korevo</a>
+            <a class="item-contacts__link" href="">/korevo</a>
           </li>
-          <li>
-            <svg width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <li  class="item-contacts">
+            <svg class="item-contacts__icon" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M36.1521 0H34.9056L19.9464 11.8451L4.98632 0H3.73982C1.67559 0 0 1.67977 0 3.74994V26.2499C0 
               28.3196 1.67559 29.9999 3.73982 29.9999H4.98632V6.61485L19.9464 18.1522L34.9056 6.61209V29.9999H36.1521C38.2169 
               29.9999 39.8924 28.3196 39.8924 26.2499V3.75002C39.8925 1.67986 38.217 0 36.1521 0Z" fill="#0D0D0D"/>
             </svg>
-            <a href="">nikita.korevo@gmail.com</a>
+            <a class="item-contacts__link" href="">nikita.korevo@gmail.com</a>
           </li>
         </ul>
       </section>
 
-      <section class="aside__skills">
-        <h3>Skills:</h3>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-          <li>Git</li>
-          <li>SCSS</li>
-          <li>BEM</li>
+      <section class="skills">
+        <h3 class="skills__title">Skills:</h3>
+        <ul class="skills__list">
+          <li class="skills__item">HTML5</li>
+          <li class="skills__item">CSS3</li>
+          <li class="skills__item">JavaScript</li>
+          <li class="skills__item">Git</li>
+          <li class="skills__item">SCSS</li>
+          <li class="skills__item">BEM</li>
         </ul>
       </section>
     </aside>
 
     <header class="header">
-      <h1 class="header__name">NIKITA KOREVO</h1>
-      <h2 class="header__position">Junior Front-end Developer</h2>
+      <h1 class="header__title">NIKITA KOREVO</h1>
+      <h2 class="header__subtitle">Junior Front-end Developer</h2>
     </header>
 
     <main class="main">
-      <section class="main__aboutme">
-        <svg width="50" height="42" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="aboutme">
+        <svg class="aboutme__icon" width="50" height="42" viewBox="0 0 50 42" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M45.3511 13.5653C43.7858 13.5653 42.5147 14.8358 42.5147 16.3959C42.5147 17.9572 43.7858 19.2259 
           45.3511 19.2259C46.9112 19.2259 48.1811 17.9566 48.1811 16.3959C48.1811 14.8358 46.9106 13.5653 45.3511 
           13.5653ZM4.65472 13.5653C3.08938 13.5653 1.81828 14.8358 1.81828 16.3959C1.81828 17.9572 3.08938 19.2259 
@@ -150,12 +150,12 @@
           18.595 14.966 18.773C14.177 20.3145 13.6862 22.0339 13.6862 23.8824ZM15.2277 41.2139H34.7642V23.8824C34.7642 
           18.4956 30.3804 14.1148 24.9948 14.1148C19.6051 14.1148 15.2277 18.4956 15.2277 23.8824V41.2139Z" fill="white"/>
         </svg>
-        <h3>Shortly about myself:</h3>
-        <p>I study web technologies such as JavaScript, React. I want to work in outsourcing/product company.</p>
+        <h3 class="aboutme__title">Shortly about myself:</h3>
+        <p class="aboutme__text">I study web technologies such as JavaScript, React. I want to work in outsourcing/product company.</p>
       </section>
       
-      <section class="main__education">
-        <svg width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="education">
+        <svg class="education__icon" width="51" height="30" viewBox="0 0 51 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M39.5155 16.9142C39.5155 16.9142 33.956 11.1727 26.2948 11.1727C18.8092 11.1727 11.4095 16.9142 
           11.4095 16.9142L7.2532 15.157V20.3123C7.90818 20.5379 8.38761 21.1486 8.38761 21.8881C8.38761 22.6349 
           7.89849 23.2468 7.23383 23.4675L8.46267 26.9392H4.83547L6.0752 23.4381C5.47955 23.1818 5.06307 22.5858 
@@ -166,14 +166,14 @@
           25.8408 23.2652C20.4993 23.2652 16.1699 24.3627 16.1699 25.7141C16.1699 27.0655 20.4993 28.163 25.8408 
           28.163Z" fill="white"/>
         </svg>
-        <h3>Education:</h3>
-        <ul>
-          <li>Yanka Kupala State University of Grodno</li>
+        <h3 class="education__title">Education:</h3>
+        <ul class="education__list">
+          <li class="education-item">Yanka Kupala State University of Grodno</li>
         </ul>
       </section>
 
-      <section class="main__code">
-        <svg width="51" height="39" viewBox="0 0 51 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="code">
+        <svg class="code__icon" width="51" height="39" viewBox="0 0 51 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M31.7989 0.518293L30.0706 0.0425144C29.8481 -0.031979 29.629 -0.00855238 29.4159 0.112598C29.2021 
           0.233845 29.0577 0.415864 28.9835 0.65836L18.5883 36.7865C18.5141 37.0291 18.5373 37.2579 18.6581 37.4721C18.7788 
           37.6868 18.9597 37.8314 19.2016 37.9059L20.9294 38.3819C21.1524 38.4569 21.3707 38.4334 21.5844 38.3121C21.7982 
@@ -192,7 +192,8 @@
           33.083 37.7343 32.8965L50.7215 19.8559C50.9073 19.6695 51.0001 19.4544 51.0001 19.2119C51.0001 18.9693 50.9073 
           18.7547 50.7215 18.5682Z" fill="white"/>
         </svg>
-        <pre>
+        <h3 class="code__title">Example of code:</h3>
+        <pre class="code__Example">
           function factorial(n) {
             if (n > 12 || n < 0) {
               throw RangeError;
@@ -207,8 +208,8 @@
         </pre>
       </section>
 
-      <section class="main__language">
-        <svg width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <section class="language">
+        <svg class="language__icon" width="43" height="45" viewBox="0 0 43 45" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.7587 31.1789C19.0675 30.1517 29.4993 27.6968 33.8925 23.6168C33.483 23.0407 28.1796 20.294 
           28.1796 20.294C28.1796 20.294 34.4943 20.294 37.0499 20.294C41.4095 19.6918 43 0 43 0C43 0 24.8715 9.87851 
           20.0599 16.0438C15.2491 22.211 10.532 31.7451 10.532 31.7451L10.5347 31.7443C4.57458 38.1079 0 43.1799 0 
@@ -235,18 +236,18 @@
           38.3106 13.6587 38.2762 13.8599 38.2291C14.624 38.0734 15.2996 38.0045 16.0132 37.9474C18.8177 37.7383 21.6186 
           37.8443 24.3737 38.1605Z" fill="white"/>
         </svg>
-        <h3>Language:</h3>
-        <ul>
-          <li>English - A1</li>
-          <li>Russian - native</li>
+        <h3 class="language__title">Language:</h3>
+        <ul class="language__list">
+          <li class="language-item">English - A1</li>
+          <li class="language-item">Russian - native</li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <a href="https://rs.school/js/" target="_blank"><img class="footer__rsschool" src="./src/images/content/footer__rsschool.svg" alt="programming courses"></a>
+      <a class="footer__link" href="https://rs.school/js/" target="_blank"><img class="footer__rsschool" src="./src/images/content/footer__rsschool.svg" alt="programming courses"></a>
       <p class="footer__year">2021</p>
-      <a href="https://github.com/NikitaKorevo" target="_blank"><img class="footer__github" src="./src/images/content/footer__github.svg" alt="github profile"></a>
+      <a class="footer__link" href="https://github.com/NikitaKorevo" target="_blank"><img class="footer__github" src="./src/images/content/footer__github.svg" alt="github profile"></a>
     </footer>
   </div>
 </body>
