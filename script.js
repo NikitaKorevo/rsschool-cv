@@ -1,7 +1,8 @@
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const imgRSSchool = document.querySelector('.footer__rsschool');
 
-if (mediaQuery) {
+if (mediaQuery.matches) {
+  console.log(mediaQuery);
   imgRSSchool.setAttribute('src', './src/images/content/footer__rsschool-white.svg');
 }
 
