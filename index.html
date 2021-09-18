@@ -20,7 +20,7 @@
         <h4 class="location__text">Lida, Belarus <span class="location__postscript">(willing to relocate)</span></h4>
       </section>
 
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <h3 class="contacts__title">Contacts:</h3>
         <ul class="contacts__list">
           <li  class="item-contacts">
@@ -38,7 +38,7 @@
         </ul>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <h3 class="skills__title">Skills:</h3>
         <ul class="skills__list">
           <li class="skills__item">React</li>
@@ -53,6 +53,14 @@
     </aside>
 
     <header class="header">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <a class="header__item" href="#contacts"><li">Contacts</li></a>
+          <a class="header__item" href="#education"><li">Education</li></a>
+          <a class="header__item" href="#skills"><li>Skills</li></a>
+          <a class="header__item" href="#projects"><li>Projects</li></a>
+        </ul>
+      </nav>
       <h1 class="header__title">NIKITA KOREVO</h1>
       <h2 class="header__subtitle">Junior Front-end Developer</h2>
     </header>
@@ -65,7 +73,7 @@
         <p class="aboutme__text">I study web technologies such as JavaScript, React.</p>
       </section>
       
-      <section class="education">
+      <section class="education" id="education">
         <div class="education__wrapper">
           <h3 class="education__title">Education:</h3>
         </div>
@@ -90,13 +98,14 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section class="projects" id="projects">
         <h3 class="projects__title">Projects:</h3>
         <article class="projects__project">
          <a class="projects__poster-link" href="https://filmcatalogue.netlify.app/" target="_blank"><img class="projects__poster" src="./src/images/content/projects__fimcatalogue.png" alt=""></a>
           <div class="projects__content">
             <h4 class="projects__subtitle">Film catalog</h4>
             <p class="projects__description">The project that receives films through the themoviedb.org API.</p>
+            <a class="projects__code" href="https://github.com/NikitaKorevo/final-project" target="_blank">view code</a>
             <p class="projects__tags">html  css  javascript</p>
           </div>
         </article>
@@ -105,6 +114,7 @@
            <div class="projects__content">
              <h4 class="projects__subtitle">TODO</h4>
              <p class="projects__description">This project is for adding notes. The data is stored in the local memory of the browser.</p>
+             <a class="projects__code" href="https://github.com/NikitaKorevo/to-do-list-react" target="_blank">view code</a>
              <p class="projects__tags">html  css  react</p>
            </div>
         </article>
