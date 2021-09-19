@@ -1,8 +1,9 @@
 const mediaQuery = window.matchMedia('(max-width: 768px)');
 const imgRSSchool = document.querySelector('.footer__rsschool');
+const buttonBurger = document.querySelector('.header__burger-button');
+const headerList = document.querySelector('.header__list');
 
 if (mediaQuery.matches) {
-  console.log(mediaQuery);
   imgRSSchool.setAttribute('src', './src/images/content/footer__rsschool-white.svg');
 }
 
@@ -11,5 +12,26 @@ mediaQuery.addEventListener('change', (e) => {
     imgRSSchool.setAttribute('src', './src/images/content/footer__rsschool-white.svg');
   } else {
     imgRSSchool.setAttribute('src', './src/images/content/footer__rsschool-black.svg');
+    buttonBurger.style.backgroundImage = "url('./src/icons/button-close.svg')";
+    headerList.style.display = '';
   }
 });
+
+const toggleBurger = () => {
+  if (!mediaQuery.matches) return;
+  if (buttonBurger.classList.toggle('header__burger-button--close')) {
+    buttonBurger.style.backgroundImage = "url('./src/icons/button-close.svg')";
+    headerList.style.display = '';
+  } else {
+    buttonBurger.style.backgroundImage = "url('./src/icons/button-open.svg')";
+    headerList.style.display = 'block';
+  }
+}
+
+buttonBurger.addEventListener('click',() => toggleBurger());
+
+const clickListItem = (e) => {
+  if (e.target.classList.contains('header__item')) toggleBurger();
+}
+
+headerList.addEventListener('click', (e) => clickListItem(e));

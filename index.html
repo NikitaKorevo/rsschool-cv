@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -54,6 +57,7 @@
 
     <header class="header">
       <nav class="header__nav">
+        <button class="header__burger-button header__burger-button--close"></button>
         <ul class="header__list">
           <li><a class="header__item" href="#contacts">Contacts</a></li>
           <li><a class="header__item" href="#education">Education</a></li>
@@ -124,7 +128,7 @@
         <div class="code_wrapper">
           <h3 class="code__title">Example of code:</h3>
         </div>
-<pre class="code__Example">
+<pre class="language-javascript code__example"><code>
   function factorial(n) {
     if (n > 12 || n &lt; 0) {
       throw RangeError;
@@ -136,7 +140,7 @@
     }
     return result;
   }
-</pre>
+</code></pre>
       </section>
 
       <section class="language">
@@ -153,10 +157,12 @@
     <footer class="footer">
       <div class="footer__white-block"></div>
       <a class="footer__link-rsschool" href="https://rs.school/js/" target="_blank"><img class="footer__rsschool" src="./src/images/content/footer__rsschool-black.svg" alt="programming courses"></a>
-      <p class="footer__year">2021</p>
+      <h5 class="footer__year">2021</h5>
       <a class="footer__link-github" href="https://github.com/NikitaKorevo" target="_blank"><img class="footer__github" src="./src/images/content/footer__github.svg" alt="github profile"></a>
     </footer>
+    
     <script src="./script.js"></script>
+    <script src="./selfRating.js"></script>
   </div>
 </body>
 </html>
