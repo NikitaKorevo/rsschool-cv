@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV | NIKITA KOREVO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link type="image/png" rel="icon" sizes="512x512" href="./src/images/favicon-512x512.png">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/monokai-sublime.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <aside class="aside">
+      <img class="aside__avatar" src="./src/images/content/aside__avatar.png" alt="avatar">
+
+      <section class="location">
+        <h4 class="location__text">Lida, Belarus <span class="location__postscript">(willing to relocate)</span></h4>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <h3 class="contacts__title">Contacts:</h3>
+        <ul class="contacts__list">
+          <li  class="item-contacts">
+            <a class="item-contacts__link item-contacts__email" href="mailto:nikita.korevo@gmail.com" target="_blank">nikita.korevo@gmail.com</a>
+          </li>
+          <li  class="item-contacts">
+            <a class="item-contacts__link item-contacts__telegram" href="https://t.me/korevo" target="_blank">@korevo</a>
+          </li>
+          <li  class="item-contacts">
+            <a class="item-contacts__link item-contacts__linkedin" href="https://www.linkedin.com/in/korevo/" target="_blank">/korevo</a>
+          </li>
+          <li class="item-contacts">
+            <a class="item-contacts__link item-contacts__github" href="https://github.com/NikitaKorevo" target="_blank">/NikitaKorevo</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="skills" id="skills">
+        <h3 class="skills__title">Skills:</h3>
+        <ul class="skills__list">
+          <li class="skills__item">React</li>
+          <li class="skills__item">JavaScript</li>
+          <li class="skills__item">HTML5</li>
+          <li class="skills__item">CSS3</li>
+          <li class="skills__item">SCSS</li>
+          <li class="skills__item">BEM</li>
+          <li class="skills__item">Git</li>
+        </ul>
+      </section>
+    </aside>
+
+    <header class="header">
+      <nav class="header__nav">
+        <button class="header__burger-button header__burger-button--close"></button>
+        <ul class="header__list">
+          <li><a class="header__item" href="#contacts">Contacts</a></li>
+          <li><a class="header__item" href="#education">Education</a></li>
+          <li><a class="header__item" href="#skills">Skills</a></li>
+          <li><a class="header__item" href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+      <a class="header_title-link" href="."><h1 class="header__title">Nikita Korevo</h1></a>
+      <h2 class="header__subtitle">Junior Front-end Developer</h2>
+    </header>
+
+    <main class="main">
+      <section class="aboutme">
+        <div class="aboutme__wrapper">
+          <h3 class="aboutme__title">Shortly about myself:</h3>
+        </div>
+        <p class="aboutme__text">I study web technologies such as JavaScript, React.</p>
+      </section>
+      
+      <section class="education" id="education">
+        <div class="education__wrapper">
+          <h3 class="education__title">Education:</h3>
+        </div>
+        <ul class="education__list">
+          <li class="education-item">Yanka Kupala State University of Grodno</li>
+        </ul>
+      </section>
+
+      <section class="courses">
+        <div class="courses_wrapper">
+          <h3 class="courses__title">Courses:</h3>
+          <ul class="courses__list">
+            <li class="courses__item">
+             <h4 class="courses__subtitle">Course basic knowledge of HTML, CSS, JavaScript, React (2021)</h4>
+             <p class="courses__author">Software engineering laboratory “Senla”</p>
+            </li>
+            <li class="courses__item">
+             <h4 class="courses__subtitle">Course JavaScript/Front-end (in progress)</h4>
+             <p class="courses__author">The Rolling Scopes School</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h3 class="projects__title">Projects:</h3>
+        <article class="projects__project">
+         <a class="projects__poster-link" href="https://filmcatalogue.netlify.app/" target="_blank"><img class="projects__poster" src="./src/images/content/projects__fimcatalogue.png" alt=""></a>
+          <div class="projects__content">
+            <h4 class="projects__subtitle">Film catalog</h4>
+            <p class="projects__description">The project that receives films through the themoviedb.org API.</p>
+            <a class="projects__code" href="https://github.com/NikitaKorevo/final-project" target="_blank">view code</a>
+            <p class="projects__tags">html  css  javascript</p>
+          </div>
+        </article>
+        <article class="projects__project">
+          <a class="projects__poster-link" href="https://to-do-note-react.netlify.app/" target="_blank"><img class="projects__poster" src="./src/images/content/projects__todolist.png" alt=""></a>
+           <div class="projects__content">
+             <h4 class="projects__subtitle">TODO</h4>
+             <p class="projects__description">This project is for adding notes. The data is stored in the local memory of the browser.</p>
+             <a class="projects__code" href="https://github.com/NikitaKorevo/to-do-list-react" target="_blank">view code</a>
+             <p class="projects__tags">html  css  react</p>
+           </div>
+        </article>
+      </section>
+
+      <section class="code">
+        <div class="code_wrapper">
+          <h3 class="code__title">Example of code:</h3>
+        </div>
+<pre class="language-javascript code__example"><code>
+  function factorial(n) {
+    if (n > 12 || n &lt; 0) {
+      throw RangeError;
+    }
+    let result = 1;
+ 
+    for (let i = 1; i &lt;= n; i++) {
+      result *= i; 
+    }
+    return result;
+  }
+</code></pre>
+      </section>
+
+      <section class="language">
+        <div class="language__wrapper">
+          <h3 class="language__title">Language:</h3>
+        </div>
+        <ul class="language__list">
+          <li class="language-item">English - A1</li>
+          <li class="language-item">Russian - native</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__white-block"></div>
+      <a class="footer__link-rsschool" href="https://rs.school/js/" target="_blank"><img class="footer__rsschool" src="./src/images/content/footer__rsschool-black.svg" alt="programming courses"></a>
+      <h5 class="footer__year">2021</h5>
+      <a class="footer__link-github" href="https://github.com/NikitaKorevo" target="_blank"><img class="footer__github" src="./src/images/content/footer__github.svg" alt="github profile"></a>
+    </footer>
+    
+    <script src="./script.js"></script>
+    <script src="./selfRating.js"></script>
+  </div>
+</body>
+</html>
