@@ -228,10 +228,16 @@ body {
 }
 
 .header__title {
+  display: inline-block;
   font-size: 36px;
   font-weight: 800;
   color: white;
   margin: 0 0 21px 0;
+  text-transform: uppercase;
+}
+
+.header_title-link {
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -243,13 +249,13 @@ body {
 
 @media screen and (max-width: 1060px) {
   .header {
-    padding: 35px 30px 140px 30px;
+    padding: 35px 30px 70px 30px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    padding: 35px 15px 140px 15px;
+    padding: 25px 15px 70px 15px;
   }
 
   .header__burger-button {
@@ -261,14 +267,39 @@ body {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    padding: 30px 0 30px;
+    left: -120%;
+    padding: 30px 30px 30px;
     background-color: #171a1e;
+     border: 2px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    animation-duration: 0.3s;
     z-index: 5;
   }
 
   .header__item {
     font-size: 32px;
     line-height: 52px;
+  }
+}
+
+@keyframes smooth-departure {
+  from {
+    left: -120%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes smooth-departure-back {
+  from {
+    left: 0%;
+  }
+
+  to {
+    left: -120%;
   }
 }
 
